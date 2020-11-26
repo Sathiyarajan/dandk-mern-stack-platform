@@ -1,0 +1,7 @@
+mongod --dbpath /home/sathya/mongodb --port 27018
+
+db.details.insertOne(
+   [{"name": "Mike", "age" :23
+   }]
+)
+
