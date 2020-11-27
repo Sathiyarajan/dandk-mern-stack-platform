@@ -3,16 +3,19 @@ const express = require('express')
 const router = express.Router();
 
 
-const {	requireSignin} = require("../controllers/auth");
+const {	requireSignin,isAuth,isAdmin} = require("../controllers/auth");
 
 const {	userById} = require("../controllers/user");
 
-router.get('/secret/:userId', requireSignin,(req,res) => {
+//TODO: isAdmin can be called for admin user ETA final course
+
+router.get('/secret/:userId', requireSignin, isAuth,isAdmin, (req,res) => {
 	res.json({
 		user: req.profile
 	});
 });
 
+//ObjectId("5fc00159b441ff4a884257ed")
 
 router.param('userId', userById)
 module.exports = router;
