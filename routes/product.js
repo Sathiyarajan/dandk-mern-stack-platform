@@ -16,8 +16,11 @@ const {
 const {	requireSignin,isAuth,isAdmin} = require("../controllers/auth");
 const {	userById} = require("../controllers/user");
 
-
 router.get('/product/:productId', read)
+
+const { create } = require("../controllers/product");
+const {	requireSignin,isAuth,isAdmin} = require("../controllers/auth");
+const {	userById} = require("../controllers/user");
 
 router.post(
 	'/product/create/:userId',
@@ -47,5 +50,7 @@ router.get('/product/photo/:productId', photo)
 
 router.param('userId', userById);
 router.param("productId",productById);
+
+router.param('userId', userById)
 
 module.exports = router;
