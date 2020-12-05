@@ -18,8 +18,6 @@ const {	userById} = require("../controllers/user");
 
 router.get('/product/:productId', read)
 
-router.get('/product/:productId', read)
-
 const { create } = require("../controllers/product");
 const {	requireSignin,isAuth,isAdmin} = require("../controllers/auth");
 const {	userById} = require("../controllers/user");
