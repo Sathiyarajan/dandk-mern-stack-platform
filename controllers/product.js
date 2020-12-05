@@ -5,7 +5,6 @@ const fs = require('fs')
 const Product = require('../models/product')
 const {errorHandler} = require('../helpers/dbErrorHandler')
 
-
 exports.productById = (req, res, next, id) => {
 	Product.findById(id).exec((err, product) => {
 		if(err || !product) {
@@ -271,4 +270,3 @@ exports.photo = (req, res) => {
 
 	}
 	next();
-}

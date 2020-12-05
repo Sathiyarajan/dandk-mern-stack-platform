@@ -27,7 +27,6 @@ router.get('/secret/:userId', requireSignin,(req,res) => {
 router.get('/user/:userId', requireSignin, isAuth, read)
 router.put('/user/:userId', requireSignin, isAuth, update)
 
-//ObjectId("5fc00159b441ff4a884257ed")
-  
+//ObjectId("5fc00159b441ff4a884257ed"
 router.param('userId', userById)
 module.exports = router;

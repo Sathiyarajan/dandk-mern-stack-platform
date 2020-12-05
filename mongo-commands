@@ -54,3 +54,4 @@ db.details.insertOne(
  1824  npm i express-validator
  1827  npm i express-jwt jsonwebtoken
  npm i formidable lodash cors
+

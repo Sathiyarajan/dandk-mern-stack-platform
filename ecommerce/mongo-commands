@@ -1,0 +1,54 @@
+mongod --dbpath /home/sathya/mongodb --port 27018
+
+db.details.insertOne(
+   [{"name": "Mike", "age" :23
+   }]
+)
+
+ 1784  apt install nodejs
+ 1785  npm -v
+ 1786  nodejs -v
+ 1787  # Using Ubuntu
+ 1788  curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+ 1789  sudo apt-get install -y nodejs
+ 1790  # Using Debian, as root
+ 1791  curl -sL https://deb.nodesource.com/setup_10.x | bash -
+ 1792  apt-get install -y nodejs
+ 1793  sudo apt-get remove nodejs npm  
+ 1794  sudo apt-get update
+ 1795  sudo apt-get upgrade
+ 1796  curl -sL deb.nodesource.com/setup_10.x | sudo -E bash -
+ 1797  sudo apt-get install -y nodejs
+ 1798  node -v
+ 1799  npm -v
+ 1800  sudo apt-get remove nodejs npm
+ 1801  curl -sL deb.nodesource.com/setup_10.x | sudo -E bash -
+ 1802  sudo apt-get install -y nodejs
+ 1803  nvm install --lts
+ 1804  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
+ 1805  nvm nvm install --lts
+ 1806  apt install nvm
+ 1807  exit
+ 1808  history
+ 1809  nodejs start
+ 1810  npm start
+ 1811  npm i uuid
+ 1812  npm start
+ 1813  npm i body-parser morgan
+ 1814  npm start
+ 1815  npm i cookie-parser
+ 1816  npm start
+ 1817  npm i uuid
+ 1818  npm start
+ 1819  npm i uuid/v1
+ 1820  npm start
+ 1821  npm i uuvid1
+ 1822  npm i uuidv1
+ 1823  npm start
+ 1824  npm i express-validator
+ 1825  npm install
+ 1826  npm start
+ 1827  npm i express-jwt jsonwebtoken
+ 1828  npm start
+ 1829  cd ../
+ 1830  ls
