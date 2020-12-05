@@ -47,8 +47,7 @@ exports.create = (req, res) => {
 		//1kb = 1000
 		//1mb = 100000
 
-		//models photo is a pojo name
-		if(files.photo) {
+if(files.photo){
 			//console.log('FILES PHOTO: ', files.photo)
 			if(files.photo.size > 1000000) {
 				return res.status(400).json({
@@ -69,7 +68,6 @@ exports.create = (req, res) => {
 	});
 
 };
-
 
 exports.remove = (req,res) => {
 	let product = req.product;
@@ -270,4 +268,3 @@ exports.photo = (req, res) => {
 
 	}
 	next();
-}

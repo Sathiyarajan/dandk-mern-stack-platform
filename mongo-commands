@@ -4,7 +4,6 @@ db.details.insertOne(
    [{"name": "Mike", "age" :23
    }]
 )
-
  1784  apt install nodejs
  1785  npm -v
  1786  nodejs -v
@@ -52,3 +51,7 @@ db.details.insertOne(
  1828  npm start
  1829  cd ../
  1830  ls
+ 1824  npm i express-validator
+ 1827  npm i express-jwt jsonwebtoken
+ npm i formidable lodash cors
+
